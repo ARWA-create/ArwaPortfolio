@@ -202,22 +202,17 @@ section { scroll-margin-top: 100px; }
 
 .hero-logo-corner {
   position: absolute;
-  top: 24px;
+  top: 90px;
   right: 40px;
   z-index: 10;
-  display: flex;
-  align-items: center;
-  gap: 14px;
 }
 
 .hero-logo-corner img {
-  width: clamp(60px, 7vw, 100px);
+  width: clamp(55px, 6vw, 85px);
   height: auto;
-  border-radius: 16px;
-  background: rgba(255,255,255,0.12);
-  padding: 6px;
-  backdrop-filter: blur(6px);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  border-radius: 14px;
+  mix-blend-mode: multiply;
+  opacity: 0.88;
 }
 
 
