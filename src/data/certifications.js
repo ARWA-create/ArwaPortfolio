@@ -1,7 +1,7 @@
 export const certifications = [
   {
     id: 1,
-    title: "مطور الذكاء الاصطناعي التوليدي من SAP",
+    title: "مطوّر الذكاء الاصطناعي التوليدي — SAP",
     titleEn: "SAP Generative AI Developer",
     issuer: "SAP",
     issuerEn: "SAP",
@@ -12,7 +12,7 @@ export const certifications = [
   },
   {
     id: 2,
-    title: "SAP Analytics Cloud المعتمد",
+    title: "تحليل البيانات السحابي — SAP",
     titleEn: "SAP Analytics Cloud",
     issuer: "SAP",
     issuerEn: "SAP",
@@ -23,7 +23,7 @@ export const certifications = [
   },
   {
     id: 3,
-    title: "SAP SuccessFactors Employee Central المعتمد",
+    title: "إدارة الموارد البشرية — SAP",
     titleEn: "SAP SuccessFactors Employee Central",
     issuer: "SAP",
     issuerEn: "SAP",
