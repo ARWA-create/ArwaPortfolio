@@ -22,7 +22,7 @@ function useReveal(ref) {
   }, []);
 }
 
-function ImageShowcase({ images, projIdx, onOpen }) {
+function ImageShowcase({ images, projIdx, onOpen, featuredIndexes = [] }) {
   const [activeIdx, setActiveIdx] = useState(0);
   const [opacity, setOpacity] = useState(1);
 
@@ -57,7 +57,7 @@ function ImageShowcase({ images, projIdx, onOpen }) {
             {images.map((img, t) => (
               <div
                 key={t}
-                className={`img-thumb${t === activeIdx ? " active" : ""}`}
+                className={`img-thumb${t === activeIdx ? " active" : ""}${featuredIndexes.includes(t) ? " img-thumb-featured" : ""}`}
                 onClick={() => switchImg(t)}
               >
                 <img src={img} alt="" />
@@ -88,7 +88,12 @@ function ProjectCard({ project, projIdx, lang, onOpen }) {
     <div className={cardClass} ref={ref}>
       <div className="handball-layout">
         {isFeatured && (
-          <ImageShowcase images={project.images} projIdx={projIdx} onOpen={onOpen} />
+          <ImageShowcase
+            images={project.images}
+            projIdx={projIdx}
+            onOpen={onOpen}
+            featuredIndexes={project.featuredIndexes}
+          />
         )}
 
         <div className="handball-content">
@@ -110,10 +115,24 @@ function ProjectCard({ project, projIdx, lang, onOpen }) {
               {tags.split(",").map((t, i) => <span key={i}>{t.trim()}</span>)}
             </div>
           )}
+          {project.links?.length > 0 && (
+            <div className="project-links">
+              {project.links.map((link) => (
+                <a key={link.url} href={link.url} target="_blank" rel="noreferrer">
+                  {isEn ? (link.labelEn || link.label) : link.label} ↗
+                </a>
+              ))}
+            </div>
+          )}
         </div>
 
         {!isFeatured && project.images && project.images.length > 0 && (
-          <ImageShowcase images={project.images} projIdx={projIdx} onOpen={onOpen} />
+          <ImageShowcase
+            images={project.images}
+            projIdx={projIdx}
+            onOpen={onOpen}
+            featuredIndexes={project.featuredIndexes}
+          />
         )}
       </div>
     </div>
