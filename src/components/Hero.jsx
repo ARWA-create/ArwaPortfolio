@@ -1,8 +1,6 @@
 import { useEffect, useRef } from "react";
 import { info } from "../data/info";
 import { skills } from "../data/skills";
-import arwaLogo from "../assets/img/ArwaLogo.png";
-
 export default function Hero({ lang }) {
   const isEn = lang === "en";
   const typingRef = useRef(null);
@@ -56,11 +54,8 @@ export default function Hero({ lang }) {
         </p>
 
         <h1 className="hero-title">
-          {isEn ? "Hi, I'm" : "أهلاً، أنا"}
-          <div className="hero-name-row">
-            <span>{isEn ? info.nameEn : info.name}</span>
-            <img src={arwaLogo} alt="Arwa Logo" className="hero-logo" />
-          </div>
+          {isEn ? "Hi, I'm" : "أهلاً، أنا"}{" "}
+          <span>{isEn ? info.nameEn : info.name}</span>
         </h1>
 
         <div className="typing-container">

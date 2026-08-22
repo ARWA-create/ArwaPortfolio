@@ -266,25 +266,11 @@ section { scroll-margin-top: 100px; }
 }
 
 .hero-title span {
+  display: block;
+  margin-top: 10px;
   background: linear-gradient(90deg, #ffffff, #dbe2ff, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.hero-name-row {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 10px;
-  max-width: 100%;
-}
-
-.hero-logo {
-  width: clamp(40px, 5vw, 70px);
-  height: auto;
-  flex-shrink: 1;
-  filter: drop-shadow(0 0 12px rgba(160, 180, 255, 0.5));
 }
 
 .typing-container {
