@@ -42,7 +42,7 @@ function CertCard({ cert, num, lang }) {
       <small>{issuer?.toUpperCase()} CERTIFIED</small>
       <h3>{title}</h3>
       <p>{issuer} Certified Professional</p>
-      {cert.date && <strong>{cert.date}</strong>}
+      {cert.date && <strong>{isEn ? (cert.dateEn || cert.date) : cert.date}</strong>}
       {cert.credentialUrl && (
         <a
           href={cert.credentialUrl}
