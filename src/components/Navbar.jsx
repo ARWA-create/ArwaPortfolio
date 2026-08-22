@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { info } from "../data/info";
+import arwaLogo from "../assets/ArwaLogo.png";
 
 export default function Navbar({ lang, setLang }) {
   const [scrolled, setScrolled] = useState(false);
@@ -29,6 +30,7 @@ export default function Navbar({ lang, setLang }) {
     <nav className={`portfolio-nav${scrolled ? " nav-scrolled" : ""}`} id="portfolioNav">
       <div className="nav-container">
         <a href="#home" className="portfolio-logo">
+          <img src={arwaLogo} alt="Arwa Logo" className="nav-logo-img" />
           <span className="logo-text">
             {isEn ? info.nameEn : info.name}
             <small>Software Engineer</small>

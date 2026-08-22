@@ -64,9 +64,17 @@ section { scroll-margin-top: 100px; }
 .portfolio-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   color: white;
   margin-left: auto;
+}
+
+.nav-logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  mix-blend-mode: multiply;
+  object-fit: contain;
 }
 
 .logo-text {

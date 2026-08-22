@@ -1,8 +1,6 @@
 import { useEffect, useRef } from "react";
 import { info } from "../data/info";
 import { skills } from "../data/skills";
-import arwaLogo from "../assets/ArwaLogo.png";
-
 export default function Hero({ lang }) {
   const isEn = lang === "en";
   const typingRef = useRef(null);
@@ -40,13 +38,6 @@ export default function Hero({ lang }) {
 
   return (
     <section id="home" className="hero-section">
-      <div className="hero-logo-corner">
-        <div className="hero-logo-text">
-          <span className="hero-logo-title">{isEn ? info.nameEn : info.name}</span>
-          <span className="hero-logo-sub">{info.titleEn}</span>
-        </div>
-        <img src={arwaLogo} alt="Arwa Logo" />
-      </div>
       <div className="hero-grid"></div>
       <div className="hero-orb orb-one"></div>
       <div className="hero-orb orb-two"></div>
