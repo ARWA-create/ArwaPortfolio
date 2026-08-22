@@ -1,0 +1,32 @@
+export const certifications = [
+  {
+    id: 1,
+    title: "SAP SuccessFactors المعتمد",
+    titleEn: "SAP Certified Associate - SuccessFactors",
+    issuer: "SAP",
+    issuerEn: "SAP",
+    date: "2024",
+    credentialUrl: "",
+    order: 1,
+  },
+  {
+    id: 2,
+    title: "SAP Analytics Cloud المعتمد",
+    titleEn: "SAP Certified - Analytics Cloud",
+    issuer: "SAP",
+    issuerEn: "SAP",
+    date: "2023",
+    credentialUrl: "",
+    order: 2,
+  },
+  {
+    id: 3,
+    title: "Microsoft Azure Fundamentals",
+    titleEn: "Microsoft Azure Fundamentals AZ-900",
+    issuer: "Microsoft",
+    issuerEn: "Microsoft",
+    date: "2023",
+    credentialUrl: "",
+    order: 3,
+  },
+];
