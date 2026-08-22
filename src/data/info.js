@@ -9,5 +9,5 @@ export const info = {
   email: "arwa@example.com",
   linkedin: "https://linkedin.com/in/arwa-alsubaie",
   github: "https://github.com/arwa-alsubaie",
-  phone: "0500000000",
+  phone: "+966 50 069 3143",
 };
