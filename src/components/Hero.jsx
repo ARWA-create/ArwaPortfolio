@@ -41,7 +41,6 @@ export default function Hero({ lang }) {
   return (
     <section id="home" className="hero-section">
       <div className="hero-logo-corner">
-        <span className="hero-logo-name">{isEn ? info.nameEn : info.name}</span>
         <img src={arwaLogo} alt="Arwa Logo" />
       </div>
       <div className="hero-grid"></div>

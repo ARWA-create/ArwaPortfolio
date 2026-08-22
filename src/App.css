@@ -220,13 +220,6 @@ section { scroll-margin-top: 100px; }
   box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
 
-.hero-logo-name {
-  color: white;
-  font-size: clamp(1rem, 1.5vw, 1.3rem);
-  font-weight: 700;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  white-space: nowrap;
-}
 
 .hero-grid {
   position: absolute; inset: 0;
