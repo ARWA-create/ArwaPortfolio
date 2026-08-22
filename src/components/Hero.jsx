@@ -56,9 +56,11 @@ export default function Hero({ lang }) {
         </p>
 
         <h1 className="hero-title">
-          {isEn ? "Hi, I'm" : "أهلاً، أنا"}{" "}
-          <span>{isEn ? info.nameEn : info.name}</span>
-          <img src={arwaLogo} alt="Arwa Logo" className="hero-logo" />
+          {isEn ? "Hi, I'm" : "أهلاً، أنا"}
+          <div className="hero-name-row">
+            <span>{isEn ? info.nameEn : info.name}</span>
+            <img src={arwaLogo} alt="Arwa Logo" className="hero-logo" />
+          </div>
         </h1>
 
         <div className="typing-container">

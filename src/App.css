@@ -1,7 +1,7 @@
 /* =========================================================
    ARWA PORTFOLIO — PREMIUM BLUE
 ========================================================= */
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap');
+/* Sakkal Majalla — system font (Windows/Office) */
 
 :root {
   --primary: #485cb5;
@@ -26,7 +26,7 @@ body {
   margin: 0;
   background: #fbfcff;
   color: var(--text);
-  font-family: "Tajawal", "Sakkal Majalla", Tahoma, Arial, sans-serif;
+  font-family: "Sakkal Majalla", Tahoma, Arial, sans-serif;
   font-size: 19px;
   overflow-x: hidden;
 }
@@ -79,7 +79,7 @@ section { scroll-margin-top: 100px; }
 
 .logo-text small {
   margin-top: 5px;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Sakkal Majalla", sans-serif;
   font-size: .6rem;
   opacity: .7;
   letter-spacing: 1px;
@@ -251,7 +251,7 @@ section { scroll-margin-top: 100px; }
 
 .hero-small-title {
   margin: 10px 0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Sakkal Majalla", sans-serif;
   font-size: .75rem;
   letter-spacing: 5px;
   opacity: .65;
@@ -266,19 +266,24 @@ section { scroll-margin-top: 100px; }
 }
 
 .hero-title span {
-  display: block;
-  margin-top: 10px;
   background: linear-gradient(90deg, #ffffff, #dbe2ff, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.hero-name-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+  max-width: 100%;
+}
+
 .hero-logo {
-  display: inline-block;
-  width: clamp(50px, 6vw, 80px);
+  width: clamp(40px, 5vw, 70px);
   height: auto;
-  vertical-align: middle;
-  margin-inline-start: 16px;
+  flex-shrink: 1;
   filter: drop-shadow(0 0 12px rgba(160, 180, 255, 0.5));
 }
 
@@ -286,7 +291,7 @@ section { scroll-margin-top: 100px; }
   min-height: 60px;
   margin: 25px 0;
   color: #e1e5ff;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Sakkal Majalla", sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
 }
@@ -362,7 +367,7 @@ section { scroll-margin-top: 100px; }
   border-radius: 50px;
   background: rgba(255,255,255,.06);
   color: rgba(255,255,255,.65);
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Sakkal Majalla", sans-serif;
   font-size: .7rem;
 }
 
@@ -376,7 +381,7 @@ section { scroll-margin-top: 100px; }
   align-items: center;
   gap: 7px;
   color: rgba(255,255,255,.45);
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Sakkal Majalla", sans-serif;
   font-size: .6rem;
   letter-spacing: 2px;
 }
@@ -443,7 +448,7 @@ section { scroll-margin-top: 100px; }
 
 .section-heading > span {
   color: var(--primary);
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Sakkal Majalla", sans-serif;
   font-size: .65rem;
   font-weight: 800;
   letter-spacing: 3px;
@@ -526,7 +531,7 @@ section { scroll-margin-top: 100px; }
   border-radius: 50px;
   background: var(--soft-blue);
   color: var(--primary);
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Sakkal Majalla", sans-serif;
   font-size: .7rem;
   font-weight: 700;
 }
@@ -536,7 +541,7 @@ section { scroll-margin-top: 100px; }
   border-radius: 50px;
   background: #e8f8ed;
   color: #398653;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Sakkal Majalla", sans-serif;
   font-size: .6rem;
   font-weight: 700;
 }
@@ -552,7 +557,7 @@ section { scroll-margin-top: 100px; }
   border-radius: 8px;
   background: #fafbff;
   color: var(--primary);
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Sakkal Majalla", sans-serif;
   font-size: .65rem;
   font-weight: 700;
 }
@@ -635,7 +640,7 @@ section { scroll-margin-top: 100px; }
   background: rgba(0,0,0,.45);
   backdrop-filter: blur(6px);
   color: white;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Sakkal Majalla", sans-serif;
   font-size: .7rem;
   padding: 4px 10px;
   border-radius: 20px;
@@ -699,7 +704,7 @@ section { scroll-margin-top: 100px; }
   border-radius: 50px;
   background: var(--soft-blue);
   color: var(--primary);
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Sakkal Majalla", sans-serif;
   font-size: .62rem;
   font-weight: 800;
   letter-spacing: 1px;
@@ -715,7 +720,7 @@ section { scroll-margin-top: 100px; }
   border-radius: 8px;
   background: #fafbff;
   color: var(--primary);
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Sakkal Majalla", sans-serif;
   font-size: .63rem;
   font-weight: 700;
 }
@@ -804,7 +809,7 @@ section { scroll-margin-top: 100px; }
   background: rgba(0,0,0,.40);
   backdrop-filter: blur(8px);
   color: white;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Sakkal Majalla", sans-serif;
   font-size: .75rem;
   direction: ltr;
 }
@@ -843,7 +848,7 @@ section { scroll-margin-top: 100px; }
 .skill-number {
   position: absolute; top: 20px; left: 25px;
   color: rgba(72,92,181,.18);
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Sakkal Majalla", sans-serif;
   font-size: 2rem; font-weight: 900;
 }
 
@@ -859,7 +864,7 @@ section { scroll-margin-top: 100px; }
   border-radius: 50px;
   background: var(--soft-blue);
   color: var(--primary);
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Sakkal Majalla", sans-serif;
   font-size: .65rem;
   font-weight: 700;
 }
