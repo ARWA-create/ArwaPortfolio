@@ -7,6 +7,6 @@ export const info = {
   subtitleEn: "Software engineer specialized in developing digital solutions and enterprise systems, with experience combining software engineering, SAP systems, and technical support. I turn technical requirements into effective solutions that support business continuity and improve the user experience.",
   typingRoles: ["Software Engineer", "ASP.NET Developer", "SAP Certified Professional"],
   email: "Arwasaudals@gmail.com",
-  linkedin: "https://linkedin.com/in/arwa-alsubaie",
+  linkedin: "https://www.linkedin.com/in/arwa-alsubaie-a9626540a",
   phone: "+966 50 069 3143",
 };
