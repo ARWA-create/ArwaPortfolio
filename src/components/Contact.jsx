@@ -39,8 +39,9 @@ export default function Contact({ lang }) {
             <div className="contact-buttons">
               {info.email && (
                 <a
-                  href={`mailto:${info.email}`}
-                  onClick={() => navigator.clipboard?.writeText(info.email)}
+                  href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(info.email)}`}
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   ✉ {info.email}
                 </a>
