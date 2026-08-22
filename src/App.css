@@ -205,14 +205,40 @@ section { scroll-margin-top: 100px; }
   top: 90px;
   right: 40px;
   z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  direction: rtl;
 }
 
 .hero-logo-corner img {
-  width: clamp(55px, 6vw, 85px);
+  width: clamp(55px, 6vw, 80px);
   height: auto;
   border-radius: 14px;
   mix-blend-mode: multiply;
-  opacity: 0.88;
+  opacity: 0.9;
+}
+
+.hero-logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.hero-logo-title {
+  color: #ffffff;
+  font-size: clamp(0.95rem, 1.4vw, 1.2rem);
+  font-weight: 700;
+  white-space: nowrap;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.2);
+}
+
+.hero-logo-sub {
+  color: rgba(255,255,255,0.75);
+  font-size: clamp(0.6rem, 0.9vw, 0.75rem);
+  letter-spacing: 1px;
+  white-space: nowrap;
 }
 
 
