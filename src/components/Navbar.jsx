@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { info } from "../data/info";
 import arwaLogo from "../assets/ArwaLogo.png";
 
-export default function Navbar({ lang, setLang }) {
+export default function Navbar({ lang, setLang, theme, setTheme }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [revealed, setRevealed] = useState(false);
@@ -50,20 +50,31 @@ export default function Navbar({ lang, setLang }) {
           ))}
         </div>
 
-        <div className="lang-switcher">
+        <div className="nav-actions">
           <button
-            onClick={() => setLang("ar")}
-            className={lang === "ar" ? "lang-active" : "lang-muted"}
+            className="theme-toggle"
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            aria-label={theme === "dark" ? "Light mode" : "Dark mode"}
+            title={theme === "dark" ? "Light" : "Dark"}
           >
-            عربي
+            {theme === "dark" ? "☀" : "☾"}
           </button>
-          <span className="lang-sep">/</span>
-          <button
-            onClick={() => setLang("en")}
-            className={lang === "en" ? "lang-active" : "lang-muted"}
-          >
-            EN
-          </button>
+
+          <div className="lang-switcher">
+            <button
+              onClick={() => setLang("ar")}
+              className={lang === "ar" ? "lang-active" : "lang-muted"}
+            >
+              عربي
+            </button>
+            <span className="lang-sep">/</span>
+            <button
+              onClick={() => setLang("en")}
+              className={lang === "en" ? "lang-active" : "lang-muted"}
+            >
+              EN
+            </button>
+          </div>
         </div>
 
         <button
