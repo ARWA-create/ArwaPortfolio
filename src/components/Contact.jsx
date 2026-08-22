@@ -55,11 +55,6 @@ export default function Contact({ lang }) {
                   💬 WhatsApp
                 </a>
               )}
-              {info.github && (
-                <a href={fixUrl(info.github)} target="_blank" rel="noreferrer">
-                  ◇ GitHub
-                </a>
-              )}
             </div>
           </div>
         </div>
